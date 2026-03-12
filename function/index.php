@@ -6,7 +6,7 @@
 <body>
     <?php
     include 'func.php';
-    echo getTableMul();
+    echo getTableMul(15,15);
     ?>
 
 </body>
