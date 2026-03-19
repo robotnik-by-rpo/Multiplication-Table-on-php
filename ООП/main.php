@@ -41,7 +41,10 @@ interface IWorkerMFC{
     public function Ready() : string;
 }
 
-class WorkerMFC extends Human implements IWorkerMFC{
+class WorkerMFC extends Human implements IWorkerMFC{    public string $name = '';
+    public string $job = 'Alena';
+    public int $age = 25;
+    protected string $pasport = '2311 215125';
     public function ShowTicket() : string{
         return " - Can you show ticket?";
     }
