@@ -126,7 +126,7 @@
                 <div>
                     <br>Выберите метод оплаты:
                     <select name="wallet">
-                        <option value="">-- Выберите способ оплаты --</option>
+                        <option value="">Выберите способ оплаты</option>
                         <?php foreach ($wallet as $key => $value): ?>
                             <option value="<?= $key ?>" <?= (($_POST['wallet'] ?? '') == $key) ? 'selected' : '' ?>>
                                 <?= $value ?>
