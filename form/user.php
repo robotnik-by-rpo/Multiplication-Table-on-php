@@ -1,9 +1,9 @@
 <?php
-    $sourse = isset($_GET['source']) ? $_GET['source'] : null;
+    $sourse = isset($_GET['sourse']) ? $_GET['sourse'] : null;
   
     if($sourse === 'waiting'){
         sleep(3);
-        header('Location: global.php?source=true');
+        header('Location: user.php?sourse=true');
         exit();
     }
 
@@ -62,10 +62,10 @@
         if (!$errors) {
             $date = new DateTime();
             $dataPOST = print_r($_POST, true);
-            $file = "./form/reg_{$date->format('Y-m-d H:i:s')}.txt";
+            $file = "./form/reg_{$date->format('Y-m-d_H-i-s')}.txt";
             file_put_contents($file, $dataPOST);
 
-            header('Location: global.php?source=waiting');
+            header('Location: user.php?sourse=waiting');
             exit();
         }
 

@@ -4,7 +4,7 @@ Array
     [lastname] => Чикиндин
     [phone] => 89027655769
     [email] => chikindi66@bk.ru
-    [themes] => 1
-    [wallet] => 1
-    [agreement] => no
+    [themes] => 3
+    [wallet] => 2
+    [agreement] => yes
 )
