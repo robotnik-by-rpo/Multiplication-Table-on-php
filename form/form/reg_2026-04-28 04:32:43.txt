@@ -1,0 +1,10 @@
+Array
+(
+    [name] => Артем
+    [lastname] => Ращупкин
+    [phone] => 89027655769
+    [email] => artem@gmail.com
+    [themes] => 1
+    [wallet] => 3
+    [agreement] => yes
+)

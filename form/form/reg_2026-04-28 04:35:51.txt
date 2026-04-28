@@ -1,0 +1,10 @@
+Array
+(
+    [name] => Сергей
+    [lastname] => Сергей
+    [phone] => 89027655769
+    [email] => chikindi66@bk.ru
+    [themes] => 2
+    [wallet] => 3
+    [agreement] => yes
+)

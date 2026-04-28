@@ -1,0 +1,10 @@
+Array
+(
+    [name] => Илья
+    [lastname] => Чикиндин
+    [phone] => 89027655769
+    [email] => chikindi66@bk.ru
+    [themes] => 1
+    [wallet] => 1
+    [agreement] => yes
+)

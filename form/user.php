@@ -64,8 +64,17 @@
             $dataPOST = print_r($_POST, true);
             $file = "./form/reg_{$date->format('Y-m-d H:i:s')}.txt";
             file_put_contents($file, $dataPOST);
+
+            header('Location: global.php?source=waiting');
+            exit();
         }
 
+    }
+
+    if($sourse === 'true'){
+        echo '<p>Регистрация успешна!</p>';
+        echo '<p><a href="user.php">Вернуться к форме</a></p>';
+        $flag = true;
     }
 ?>
 
@@ -113,9 +122,25 @@
                     <?php echo $errors['themes'] ?? ''; ?>
                     </br>
                 </div>
+
                 <div>
-                    <label>Согласны на рассылку</label>
+                    <br>Выберите метод оплаты:
+                    <select name="wallet">
+                        <option value="">-- Выберите способ оплаты --</option>
+                        <?php foreach ($wallet as $key => $value): ?>
+                            <option value="<?= $key ?>" <?= (($_POST['wallet'] ?? '') == $key) ? 'selected' : '' ?>>
+                                <?= $value ?>
+                            </option>
+                        <?php endforeach ?>
+                    </select>
+                    <?php echo $errors['wallet'] ?? ''; ?>
+                    </br>
+                </div>
+
+                <div>
+                    <br>Согласны на рассылку
                     <input type='checkbox' name='agreement' value="yes"> 
+                    </br>
                 </div>
                 <div>
                     <button type="submit">Отправить</button>
