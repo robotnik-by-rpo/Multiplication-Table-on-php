@@ -3,7 +3,7 @@
     function TakeExtension($str) : string{
         $regexp = '/\.([^.]+)$/';
         preg_match($regexp, $str, $matches);
-        return $matches[1];
+        return $matches[1] ?? '';
     }    
 
     //2-a
@@ -34,14 +34,12 @@
 
     //3
     function Title($file) : string{
-        $lines = file($file);
+        $lines = file_get_contents($file);
         $regexp = '/<title>(.*?)<\/title>/';
-
-        foreach($lines as $line){
-            if (preg_match($regexp, $line,$matches)){
-                return $matches[1];
-            }
+        if (preg_match($regexp, $lines, $matches)){
+            return $matches[1];
         }
+
         return "";
     }
 
