@@ -48,7 +48,7 @@ foreach ($allApps as $index => $app) {
     $deleted = end($app) == '1';
     if (!$deleted) {
 
-        $displayData = array_slice($app, 0, -2);
+        $displayData = array_slice($app, 0, -1);
         $items['reg_' . $index] = implode('|', $displayData);
     }
 }
@@ -91,6 +91,7 @@ foreach ($allApps as $index => $app) {
                         <th>Email</th>
                         <th>Тема</th>
                         <th>Способ оплаты</th>
+                        <th>Согласие на рассылку</th>
                     </tr>
                 </thead>
                 <tbody>
