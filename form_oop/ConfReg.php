@@ -147,7 +147,7 @@ class FormReg{
         foreach ($allApps as $index => $app){
             $deleted = end($app) == '1';
             if (!$deleted){
-                $displayData = array_slice($app, 0, -2);
+                $displayData = array_slice($app, 0, -1);
                 $activeReg[$index] = $displayData;
             }
         }

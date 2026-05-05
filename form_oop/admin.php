@@ -56,6 +56,7 @@ unset($_SESSION['admin_message']);
                         <th>Email</th>
                         <th>Тема</th>
                         <th>Способ оплаты</th>
+                        <th>Согласие на рассылку</th>
                     </tr>
                 </thead>
                 <tbody>
