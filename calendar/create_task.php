@@ -6,8 +6,7 @@ $database = new DataBase();
 $types = $database->GetTypes();
 ?>
 
-<!DOCTYPE html>
-<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Создание задачи - Мой календарь</title>

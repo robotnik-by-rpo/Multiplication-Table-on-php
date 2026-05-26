@@ -4,7 +4,7 @@ require_once 'db.php';
 
 $database = new DataBase();
 
-// Парсинг даты с регулярными выражениями
+// парсинг даты с регулярными выражениями
 function parseDate($dateStr) {
     if (empty($dateStr)) {
         return null;

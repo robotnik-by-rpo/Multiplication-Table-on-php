@@ -26,8 +26,6 @@ if ($task['datetime']) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Редактирование задачи - Мой календарь</title>

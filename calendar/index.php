@@ -22,8 +22,6 @@ if ($specific_date) {
 $tasks = $database->LoadTasksForTable($filter, $specific_date);
 ?>
 
-<!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Мой календарь</title>
